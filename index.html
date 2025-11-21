@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Opt-in Proof — Equipment Alert Notifications</title>
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.6;color:#111;background:#f7fafc;padding:24px}
+    .card{max-width:900px;margin:24px auto;padding:28px;background:#fff;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    h1{font-size:22px;margin:0 0 8px}
+    h2{font-size:16px;margin:18px 0 8px;color:#0f172a}
+    p{margin:8px 0;color:#334155}
+    pre{background:#0f172a;color:#f8fafc;padding:12px;border-radius:6px;overflow:auto}
+    .meta{font-size:13px;color:#64748b;margin-top:12px}
+    .btn{display:inline-block;margin-top:12px;padding:10px 14px;border-radius:8px;background:#0ea5e9;color:#fff;text-decoration:none}
+    .note{font-size:13px;color:#7c7c7c;margin-top:8px}
+    .field{background:#f1f5f9;padding:12px;border-radius:8px;margin-top:10px}
+    .two {display:flex;gap:12px;flex-wrap:wrap}
+    .col{flex:1;min-width:240px}
+    footer{font-size:13px;color:#94a3b8;text-align:center;margin-top:16px}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Opt-in Proof — Equipment Alert Notifications</h1>
+    <p>
+      <strong>Business / Service:</strong> Jacky Automation Alerts<br/>
+      <strong>Contact:</strong> 512201627@qq.com
+    </p>
+
+    <h2>Use case (summary)</h2>
+    <p>
+      We send automated, transactional SMS alerts to authorized customers when their industrial equipment reports
+      abnormal conditions (high temperature, pressure, system faults). These messages are strictly operational —
+      no marketing or promotional content is sent.
+    </p>
+
+    <h2>How opt-in is collected</h2>
+    <div class="field">
+      <p>
+        Customers explicitly opt in to receive SMS alerts during device onboarding or by signing a service agreement.
+        Example opt-in flows include:
+      </p>
+      <ul>
+        <li>Customer completes a device registration form (checkbox: "I agree to receive equipment alert SMS").</li>
+        <li>Customer sends an SMS keyword to enroll or confirms via email/console during setup.</li>
+        <li>Customer signs up via a contract / onboarding form and provides phone number and consent.</li>
+      </ul>
+
+      <p class="meta"><strong>Opt-in type:</strong> Via Text / During Onboarding</p>
+      <p class="note">Customers may opt out anytime by contacting support at <a href="mailto:512201627@qq.com">512201627@qq.com</a>.</p>
+    </div>
+
+    <h2>Sample messages</h2>
+    <div class="field two">
+      <div class="col">
+        <pre>[Alert] Your equipment reported a high temperature warning at 18:32. Please check the system immediately.</pre>
+      </div>
+      <div class="col">
+        <pre>[System Notification] Your device is back to normal. Status: OK.</pre>
+      </div>
+    </div>
+
+    <h2>Proof of consent (opt-in)</h2>
+    <p>
+      Paste a publicly accessible URL that demonstrates opt-in. This can be a hosted screenshot, an onboarding page,
+      or a document describing the opt-in flow.
+    </p>
+
+    <p class="field">
+      Example: the uploaded proof document (replace this with the public URL after you publish to GitHub Pages):
+      <br/>
+      <a href="/mnt/data/Haiwell（海为）A系列智联HMI宣传彩页0818.pdf" target="_blank" rel="noopener noreferrer">
+        /mnt/data/Haiwell（海为）A系列智联HMI宣传彩页0818.pdf
+      </a>
+    </p>
+
+    <p class="note">
+      <strong>Important:</strong> After you push this `index.html` to GitHub Pages, replace the link above with the GitHub Pages URL,
+      for example: <code>https://your-github-username.github.io/your-repo/optin-proof.png</code> or the repo page URL.
+    </p>
+
+    <h2>Timestamp / Evidence</h2>
+    <div class="field">
+      <p><strong>Timestamp:</strong> <!-- the script below will auto-fill a generation timestamp when saving to disk --> </p>
+      <p id="ts" class="meta"></p>
+    </div>
+
+    <a class="btn" id="download" href="#" onclick="return false;">Download this proof as PDF (optional)</a>
+
+    <footer>
+      Page generated to demonstrate opt-in proof for Twilio Toll-Free verification.<br/>
+      Make sure the final URL you submit is publicly reachable from the internet (no firewall or auth).
+    </footer>
+  </div>
+
+  <script>
+    // Insert a simple timestamp for evidence
+    const now = new Date();
+    document.getElementById('ts').innerText = now.toISOString().replace('T',' ').replace('Z',' UTC');
+
+    // Optional: allow user to download a printable copy (lightweight)
+    document.getElementById('download').addEventListener('click', function(){
+      window.print();
+    });
+  </script>
+</body>
+</html>
