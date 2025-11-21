@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Opt-in Proof — Equipment Alert Notifications</title>
+  <title>Equipment Alert Notifications</title>
   <style>
     body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;line-height:1.6;color:#111;background:#f7fafc;padding:24px}
     .card{max-width:900px;margin:24px auto;padding:28px;background:#fff;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
@@ -22,9 +22,9 @@
 </head>
 <body>
   <div class="card">
-    <h1>Opt-in Proof — Equipment Alert Notifications</h1>
+    <h1>Equipment Alert Notifications</h1>
     <p>
-      <strong>Business / Service:</strong> Jacky Automation Alerts<br/>
+      <strong>Business / Service:</strong> Xiao's Automation Alerts<br/>
       <strong>Contact:</strong> 512201627@qq.com
     </p>
 
@@ -62,47 +62,10 @@
     </div>
 
     <h2>Proof of consent (opt-in)</h2>
-    <p>
-      Paste a publicly accessible URL that demonstrates opt-in. This can be a hosted screenshot, an onboarding page,
-      or a document describing the opt-in flow.
-    </p>
-
     <p class="field">
-      Example: the uploaded proof document (replace this with the public URL after you publish to GitHub Pages):
-      <br/>
-      <a href="/mnt/data/Haiwell（海为）A系列智联HMI宣传彩页0818.pdf" target="_blank" rel="noopener noreferrer">
-        /mnt/data/Haiwell（海为）A系列智联HMI宣传彩页0818.pdf
+      <img src="consent-demo.png" alt="desc" width="300" height="200">
       </a>
     </p>
-
-    <p class="note">
-      <strong>Important:</strong> After you push this `index.html` to GitHub Pages, replace the link above with the GitHub Pages URL,
-      for example: <code>https://your-github-username.github.io/your-repo/optin-proof.png</code> or the repo page URL.
-    </p>
-
-    <h2>Timestamp / Evidence</h2>
-    <div class="field">
-      <p><strong>Timestamp:</strong> <!-- the script below will auto-fill a generation timestamp when saving to disk --> </p>
-      <p id="ts" class="meta"></p>
-    </div>
-
-    <a class="btn" id="download" href="#" onclick="return false;">Download this proof as PDF (optional)</a>
-
-    <footer>
-      Page generated to demonstrate opt-in proof for Twilio Toll-Free verification.<br/>
-      Make sure the final URL you submit is publicly reachable from the internet (no firewall or auth).
-    </footer>
   </div>
-
-  <script>
-    // Insert a simple timestamp for evidence
-    const now = new Date();
-    document.getElementById('ts').innerText = now.toISOString().replace('T',' ').replace('Z',' UTC');
-
-    // Optional: allow user to download a printable copy (lightweight)
-    document.getElementById('download').addEventListener('click', function(){
-      window.print();
-    });
-  </script>
 </body>
 </html>
